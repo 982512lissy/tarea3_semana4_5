@@ -18,11 +18,14 @@ escalera_vida2018 = df_filtrado.iloc[0:1704,2]
 escalera_vida2018.describe() 
 escalera_vida2 =pd.DataFrame(escalera_vida2018.describe() )
 escalera_vida2
+escalera_vidaT=pd.concat([escalera_vida1,escalera_vida2])
+escalera_vidaT
 #crear un Dataframe de las medias gobales#################
 glob1=({"pais":["global","global"],
  "escalera_vida":[5.418554,5.502134],
   "anio":[2008,2018]})
 glob1t=pd.DataFrame(glob1 )
+glob1t["std"]=[1.16 ,1.10]
 glob1t
 ## Nueva Zelanda##
 feli
