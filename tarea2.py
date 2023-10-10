@@ -18,8 +18,6 @@ escalera_vida2018 = df_filtrado.iloc[0:1704,2]
 escalera_vida2018.describe() 
 escalera_vida2 =pd.DataFrame(escalera_vida2018.describe() )
 escalera_vida2
-escalera_vida1.loc["mean"]
-escalera_vida2.loc["mean"]
 #crear un Dataframe de las medias gobales#################
 glob1=({"pais":["global","global"],
  "escalera_vida":[5.418554,5.502134],
@@ -52,7 +50,7 @@ final=pd.concat([tot,glob1t])
 final_tarea2= pd.DataFrame(final.set_index('pais'))
 final_tarea2.reset_index(inplace=True)
 final_tarea2
-### Calidad_entrega ############
+### percepcion_corrupcion ############
 percepcion_corrupcion=felicidad.percepcion_corrupcion
 feli["percepcion_corrupcion"]=percepcion_corrupcion
 feli
