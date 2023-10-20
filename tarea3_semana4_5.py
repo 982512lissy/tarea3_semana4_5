@@ -11,7 +11,6 @@ media1= alemania['equipo_1_final'].mean()
 media1equipo_1=="Alemania")| (partido.equipo_1=="Rusia")]
 partido_comparar
 media2=rusia['equipo_1_final'].mean()
-media2
 tabla ={"paises":["Alemania","Rusia"],
         "media_goles": [1.91,3.33]}
 tabla1= pd.DataFrame(tabla)
